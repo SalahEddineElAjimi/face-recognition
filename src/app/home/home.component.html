@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <title>Projet.AI</title>
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" >PROJET-AI</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" routerLink="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="about">About</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="test">Test</a></li>
+                <li class="nav-item"><a class="nav-link" (click)="scrollToContact()">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                <h1 class="mx-auto my-0 text-uppercase">Face-Attendance</h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">Immerse yourself in an era of simplified and secure presence management with our Face-Attendance project, providing swift and accurate identification for an unparalleled experience.</h2>
+                <a class="btn btn-primary" routerLink="test" >Get Started</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- About-->
+<section class="hero">
+  <div class="heading">
+    <h1>About Us</h1>
+  </div>
+  <div class="containerr">
+    <div class="hero-content">
+      <h2>Welcome to our Project</h2>
+      <p>The team behind the Face Attendance project comprises four brilliant minds, each bringing their unique expertise and passion for innovation. Together, these individuals with diverse skills form a cohesive team, combining talents in design, development, data management, and security. Their close collaboration and shared dedication to advancing facial recognition not only ensure a high-quality end product but also a reliable and scalable technological solution. Each member of this team plays an essential role in constructing a seamless, efficient, and future-ready presence management platform.</p>
+    </div>
+    <div class="hero-image">
+      <img src="../../assets/img1.jpg" alt="">
+    </div>
+  </div>
+</section>
+<div id="portfolio">
+  <div class="container">
+      <h1 class="sub-title text-center">The work tools</h1>
+      <div class="work-list">
+          <div class="work">
+            <img src="../../assets/img/pyth1.jpg.jpg" alt="">
+              <div class="layer">
+                  <h3>Python</h3>
+                  <p>Built using Python and Flask, our attendance management project incorporates an advanced facial recognition module, providing a robust and flexible solution for user identification.</p>
+
+              </div>
+          </div>
+          <div class="work">
+            <img src="../../assets/img/ang5.jpg" alt="">
+              <div class="layer">
+                  <h3>Angular</h3>
+                  <p>Our attendance project uses an Angular-built frontend for intuitive tracking. Leveraging Angular's features, it ensures smooth navigation and efficient record management, boosting system performance.</p>
+
+              </div>
+          </div>
+          <div class="work">
+            <img src="../../assets/img/face1.jpg" alt="">
+              <div class="layer">
+                  <h3>Face-Attendance</h3>
+                  <p>Built upon facial recognition technology, our Face Attendance project offers an innovative solution for attendance management. By merging facial recognition's precision with a user-friendly interface, it streamlines and secures attendance tracking.</p>
+
+              </div>
+          </div>
+      </div>
+
+  </div>
+</div>
+<section #contactSection id="contact">
+
+<footer  class="bg-dark text-white mt-5 pt-5 pb-4">
+  <div>
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-envelope mr-3"></i> salaheddinelajimi971gmail.com</p>
+                <p><i class="fas fa-phone mr-3"></i> 0659847674</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook mr-3"></i></a>
+                    <a href=""><i class="fab fa-instagram mr-3"></i></a>
+                    <a href=""><i class="fab fa-linkedin mr-3"></i></a>
+                    <a href="https://github.com/SalahEddineElAjimi"><i class="fab fa-github mr-3"></i></a>
+
+                </div>
+
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+</section>
+</body>
+</html>

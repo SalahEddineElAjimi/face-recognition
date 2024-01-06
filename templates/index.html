@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Attendance</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow: hidden; 
+            position: relative;
+            background-color: #f1f1f1; 
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100vh;
+            object-fit: contain;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px; 
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+        
+        #loading-spinner {
+            position: fixed; 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+
+        #loading-spinner .spinner {
+            border: 8px solid rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            border-top: 8px solid #000;
+            width: 80px;
+            height: 80px;
+            animation: spin 1s linear infinite;
+        }
+
+        #loading-spinner p {
+            color: black; 
+            margin-bottom: 80px; 
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div id="loading-spinner">
+        <div class="spinner"></div>
+        <p>It may take a moment . . .</p>
+    </div>
+    <img src="{{ url_for('video_feed') }}" alt="Video Feed" id="video-feed">
+  
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("loading-spinner").style.display = "flex";
+        });
+
+        document.getElementById("video-feed").onload = function () {
+            document.getElementById("loading-spinner").style.display = "none";
+            document.getElementById("video-feed").style.display = "block";
+        };
+    </script>
+</body>
+</html>
